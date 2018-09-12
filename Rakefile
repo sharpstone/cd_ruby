@@ -1,7 +1,7 @@
 
 task "assets:precompile" do
   out = `cd client && bundle exec ruby -v`
-  puts out
+  puts "cd version #{out}"
   unless $?.success?
     puts "Failed: #{out}"
     exit 1
